@@ -1,6 +1,6 @@
 {
   "$schema": "https://animalpassport.org/schema/0.1/passport.schema.json",
-  "_note": "PUBLIC SAMPLE - invented data, the companion to SAMPLE-PUBLIC-PEBBLE.json. Skerry is Pebble's dam; she died at Gullstone Bay Aquarium in 2023, and the owner asked for her death and necropsy records. Only those two record types were chosen; the necropsy photo travels with the necropsy, so media is listed too. It exists to show the fields only a dead animal carries - the event death block and the necropsy.",
+  "_note": "PUBLIC SAMPLE - invented data, the companion to pebble.json. Skerry is Pebble's dam; she died at Gullstone Bay Aquarium in 2023, and the owner asked for her death and necropsy records. Only those two record types were chosen; the necropsy photo travels with the necropsy, so media is listed too. It exists to show the fields only a dead animal carries - the transaction death block and the necropsy.",
   "animalPassport": {
     "manifest": {
       "specVersion": "0.1",
@@ -22,7 +22,7 @@
       },
       "contents": [
         {
-          "recordType": "events",
+          "recordType": "transactions",
           "recordCount": 2
         },
         {
@@ -74,18 +74,18 @@
       "population": "0.1.0"
     },
     "records": {
-      "events": [
+      "transactions": [
         {
-          "originRef": "event.22610",
+          "originRef": "transaction.22610",
           "recordDateTime": "2023-11-18T07:20:00-08:00",
-          "eventType": {
+          "transactionType": {
             "description": "Death",
             "category": "Death"
           },
           "enclosureName": "Harbor Habitat",
           "population": [
             {
-              "originRef": "eventPopulation.15988",
+              "originRef": "transactionPopulation.15988",
               "lifeStage": "Adult",
               "population": "0.1.0"
             }
@@ -101,7 +101,7 @@
             "ageAtDeathDays": "4553",
             "ageCategory": "Adult",
             "inZooSinceDate": "2018-07-15",
-            "acquisitionEventRef": "event.20429",
+            "acquisitionTransactionRef": "transaction.20429",
             "acquisitionInstitution": {
               "institutionCode": "900102",
               "mnemonic": "TERNPT",
@@ -112,12 +112,12 @@
             "medicalStatus": "In Treatment",
             "deathCode": "EUT-02"
           },
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900101",
             "mnemonic": "GULLSTON",
             "name": "Gullstone Bay Aquarium"
@@ -125,27 +125,27 @@
           "audit": "2023-11-18T08:05:31-08:00 Petrov, Anya"
         },
         {
-          "originRef": "event.20429",
+          "originRef": "transaction.20429",
           "recordDateTime": "2018-07-15T15:10:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Loan Acquisition",
             "category": "Loan Transaction"
           },
           "enclosureName": "Quarantine Pool 1",
           "population": [
             {
-              "originRef": "eventPopulation.14528",
+              "originRef": "transactionPopulation.14528",
               "lifeStage": "Adult",
               "population": "0.1.0"
             }
           ],
           "comments": "Arrived from Tern Point with her pup PV-17-02.",
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900101",
             "mnemonic": "GULLSTON",
             "name": "Gullstone Bay Aquarium"
@@ -171,7 +171,7 @@
           "necropsyNumber": "9",
           "necropsyYear": "2023",
           "recordDate": "2023-11-18",
-          "deathEventRef": "event.22610",
+          "deathTransactionRef": "transaction.22610",
           "performedBy": "Okafor, Grace; Coastal Veterinary Diagnostics",
           "staff": [
             "Brennan, Theo",

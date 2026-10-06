@@ -1,6 +1,6 @@
 {
   "$schema": "https://animalpassport.org/schema/0.1/passport.schema.json",
-  "_note": "PUBLIC SAMPLE - every animal, facility, person, place, number and note in this file is invented. Pebble is a harbor seal born in rehabilitation at Tern Point, released, restranded entangled, and since 2018 held by Gullstone Bay Aquarium for her owner, the Coastal Pinniped Trust. She carries every field the format defines except the ones only a dead animal has, which are in SAMPLE-PUBLIC-SKERRY.json (her dam). Records whose originRef starts TP- were recorded at Tern Point and came to Gullstone in an earlier passport: they keep Tern Point's originRef and name it in recordedAt. Media sha256 values are digests of no real file. Phone numbers use the fictional 555-01xx range, the transponder the 999 test prefix. The taxonomy ids are the real ITIS and GBIF ids for Phoca vitulina. The package is one zip - this file as passport.json, the media under media/.",
+  "_note": "PUBLIC SAMPLE - every animal, facility, person, place, number and note in this file is invented. Pebble is a harbor seal born in rehabilitation at Tern Point, released, restranded entangled, and since 2018 held by Gullstone Bay Aquarium for her owner, the Coastal Pinniped Trust. She carries every field the format defines except the ones only a dead animal has, which are in skerry.json (her dam). Records whose originRef starts TP- were recorded at Tern Point and came to Gullstone in an earlier passport: they keep Tern Point's originRef and name it in recordedAt. Media sha256 values are digests of no real file. Phone numbers use the fictional 555-01xx range, the transponder the 999 test prefix. The taxonomy ids are the real ITIS and GBIF ids for Phoca vitulina. The package is one zip - this file as passport.json, the media under media/.",
   "animalPassport": {
     "manifest": {
       "specVersion": "0.1",
@@ -43,7 +43,7 @@
           "recordCount": 1
         },
         {
-          "recordType": "events",
+          "recordType": "transactions",
           "recordCount": 5
         },
         {
@@ -369,29 +369,29 @@
           "population": "0.1.0"
         }
       ],
-      "events": [
+      "transactions": [
         {
-          "originRef": "event.20877",
+          "originRef": "transaction.20877",
           "recordDateTime": "2024-04-09T09:30:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Move Animal",
             "category": "Move Animal"
           },
           "enclosureName": "Harbor Habitat",
           "population": [
             {
-              "originRef": "eventPopulation.15012",
+              "originRef": "transactionPopulation.15012",
               "lifeStage": "Adult",
               "population": "0.1.0"
             }
           ],
           "comments": "Moved with PV-15-01 when the new habitat opened.",
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900101",
             "mnemonic": "GULLSTON",
             "name": "Gullstone Bay Aquarium"
@@ -399,27 +399,27 @@
           "audit": "2024-04-09T10:02:55-07:00 Petrov, Anya"
         },
         {
-          "originRef": "event.20431",
+          "originRef": "transaction.20431",
           "recordDateTime": "2018-07-15T15:10:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Loan Acquisition",
             "category": "Loan Transaction"
           },
           "enclosureName": "Quarantine Pool 2",
           "population": [
             {
-              "originRef": "eventPopulation.14530",
+              "originRef": "transactionPopulation.14530",
               "lifeStage": "Juvenile",
               "population": "0.1.0"
             }
           ],
           "comments": "Arrived from Tern Point by road, four hours in transit, no sedation. Deemed non-releasable (left eye).",
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900101",
             "mnemonic": "GULLSTON",
             "name": "Gullstone Bay Aquarium"
@@ -434,7 +434,7 @@
             "name": "Tern Point Marine Rescue"
           },
           "recordDateTime": "2018-03-20T08:05:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Rescue",
             "category": "Rescue"
           },
@@ -452,12 +452,12 @@
             }
           ],
           "comments": "Restranded entangled, six months after release.",
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900102",
             "mnemonic": "TERNPT",
             "name": "Tern Point Marine Rescue"
@@ -554,7 +554,7 @@
             "name": "Tern Point Marine Rescue"
           },
           "recordDateTime": "2017-09-12T10:40:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Release",
             "category": "Release"
           },
@@ -594,7 +594,7 @@
             "name": "Tern Point Marine Rescue"
           },
           "recordDateTime": "2017-06-04T06:30:00-07:00",
-          "eventType": {
+          "transactionType": {
             "description": "Birth",
             "category": "Birth"
           },
@@ -611,12 +611,12 @@
               "population": "0.1.0"
             }
           ],
-          "ownerAfterEvent": {
+          "ownerAfterTransaction": {
             "institutionCode": "900103",
             "mnemonic": "CPTRUST",
             "name": "Coastal Pinniped Trust"
           },
-          "holderAfterEvent": {
+          "holderAfterTransaction": {
             "institutionCode": "900102",
             "mnemonic": "TERNPT",
             "name": "Tern Point Marine Rescue"
@@ -718,7 +718,7 @@
           "recordDateTime": "2026-08-30T08:30:00-07:00",
           "category": "Treatment",
           "caseRef": "case.1188",
-          "noteText": "<p>Started an ophthalmic antibiotic.</p><div data-record=\"prescription\"><p>Ofloxacin 0.3% ophthalmic, 1 drop in the left eye every 8 hours for 7 days, from 2026-08-30.</p></div>",
+          "noteText": "<p>Started an ophthalmic antibiotic.</p><div data-record=\"prescription\" data-ref=\"prescription.4412\"><p>Ofloxacin 0.3% ophthalmic, 1 drop in the left eye every 8 hours for 7 days, from 2026-08-30.</p></div>",
           "audit": "2026-08-30T08:41:02-07:00 Okafor, Grace"
         },
         {
@@ -764,12 +764,14 @@
       "medicalAlerts": [
         {
           "originRef": "medicalAlert.902",
+          "recordDateTime": "2018-07-16T12:00:31-07:00",
           "alertLevel": "High",
           "alertText": "Limited vision in the left eye - approach and present fish from her right.",
           "audit": "2018-07-16T12:00:31-07:00 Okafor, Grace"
         },
         {
           "originRef": "medicalAlert.744",
+          "recordDateTime": "2021-02-11T09:25:00-08:00",
           "alertLevel": "Medium",
           "alertText": "Seal pox lesions - glove; separate towels.",
           "closedDateTime": "2021-03-04T08:00:00-08:00",
@@ -786,6 +788,7 @@
       "chronicConditions": [
         {
           "originRef": "chronicCondition.77",
+          "recordDateTime": "2018-07-16T12:05:47-07:00",
           "condition": "Corneal scarring, left eye",
           "status": "Active",
           "detailedDescription": "Healed ulcer from the 2018 entanglement; limited vision on the left.",
@@ -818,6 +821,7 @@
       "drugReactions": [
         {
           "originRef": "drugReaction.41",
+          "recordDateTime": "2019-05-08T14:10:33-07:00",
           "drug": {
             "name": "Amoxicillin-Clavulanate 250 mg",
             "shortName": "Amox-clav",
@@ -1350,7 +1354,8 @@
             {
               "originRef": "complication.33",
               "complication": "Bradycardia",
-              "level": "1"
+              "level": "1",
+              "comments": "Heart rate fell to 38/min at intubation; resolved with a lighter plane."
             },
             {
               "originRef": "complication.34",
